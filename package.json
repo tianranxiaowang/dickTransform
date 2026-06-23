@@ -1,0 +1,11 @@
+{
+  "name": "ink-morph-drawing",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check src/main.js && node --check src/inkMorph.js && node --check src/targetShape.js && node --test",
+    "test": "node --test",
+    "serve": "python3 -m http.server 4173"
+  }
+}

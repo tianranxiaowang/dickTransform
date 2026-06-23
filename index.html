@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>画完它就变形</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="画布变形小游戏">
+      <section class="stage" aria-label="绘画区域">
+        <canvas id="drawingCanvas" aria-label="白色绘画画布"></canvas>
+      </section>
+
+      <section class="controls" aria-label="画布控制">
+        <p id="statusText" class="status" aria-live="polite">随便画点什么。</p>
+        <div class="buttonRow">
+          <button id="finishButton" class="primaryButton" type="button" disabled>画完了</button>
+          <button id="resetButton" class="secondaryButton" type="button">重画</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
